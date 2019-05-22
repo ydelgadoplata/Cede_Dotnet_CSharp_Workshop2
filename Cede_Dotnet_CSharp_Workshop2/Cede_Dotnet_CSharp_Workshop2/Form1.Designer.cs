@@ -100,7 +100,7 @@
             // 
             // btnTranformJson
             // 
-            this.btnTranformJson.Location = new System.Drawing.Point(485, 46);
+            this.btnTranformJson.Location = new System.Drawing.Point(707, 352);
             this.btnTranformJson.Name = "btnTranformJson";
             this.btnTranformJson.Size = new System.Drawing.Size(134, 23);
             this.btnTranformJson.TabIndex = 7;
