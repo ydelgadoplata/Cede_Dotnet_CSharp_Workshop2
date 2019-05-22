@@ -42,7 +42,7 @@
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(334, 44);
+            this.btnSave.Location = new System.Drawing.Point(334, 359);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(75, 23);
             this.btnSave.TabIndex = 0;
@@ -52,14 +52,14 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(36, 46);
+            this.textBox1.Location = new System.Drawing.Point(36, 362);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(133, 20);
             this.textBox1.TabIndex = 1;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(175, 46);
+            this.textBox2.Location = new System.Drawing.Point(175, 362);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(153, 20);
             this.textBox2.TabIndex = 2;
@@ -75,7 +75,7 @@
             // lblname
             // 
             this.lblname.AutoSize = true;
-            this.lblname.Location = new System.Drawing.Point(172, 30);
+            this.lblname.Location = new System.Drawing.Point(172, 336);
             this.lblname.Name = "lblname";
             this.lblname.Size = new System.Drawing.Size(44, 13);
             this.lblname.TabIndex = 4;
@@ -84,7 +84,7 @@
             // lblCedula
             // 
             this.lblCedula.AutoSize = true;
-            this.lblCedula.Location = new System.Drawing.Point(36, 30);
+            this.lblCedula.Location = new System.Drawing.Point(36, 336);
             this.lblCedula.Name = "lblCedula";
             this.lblCedula.Size = new System.Drawing.Size(40, 13);
             this.lblCedula.TabIndex = 5;
