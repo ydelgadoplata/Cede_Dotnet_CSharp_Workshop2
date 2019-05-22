@@ -42,7 +42,7 @@
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(334, 359);
+            this.btnSave.Location = new System.Drawing.Point(331, 50);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(75, 23);
             this.btnSave.TabIndex = 0;
@@ -52,14 +52,14 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(36, 362);
+            this.textBox1.Location = new System.Drawing.Point(33, 53);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(133, 20);
             this.textBox1.TabIndex = 1;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(175, 362);
+            this.textBox2.Location = new System.Drawing.Point(172, 53);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(153, 20);
             this.textBox2.TabIndex = 2;
@@ -67,7 +67,7 @@
             // grdPersons
             // 
             this.grdPersons.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grdPersons.Location = new System.Drawing.Point(459, 129);
+            this.grdPersons.Location = new System.Drawing.Point(39, 100);
             this.grdPersons.Name = "grdPersons";
             this.grdPersons.Size = new System.Drawing.Size(373, 171);
             this.grdPersons.TabIndex = 3;
@@ -75,7 +75,7 @@
             // lblname
             // 
             this.lblname.AutoSize = true;
-            this.lblname.Location = new System.Drawing.Point(172, 336);
+            this.lblname.Location = new System.Drawing.Point(169, 27);
             this.lblname.Name = "lblname";
             this.lblname.Size = new System.Drawing.Size(44, 13);
             this.lblname.TabIndex = 4;
@@ -84,7 +84,7 @@
             // lblCedula
             // 
             this.lblCedula.AutoSize = true;
-            this.lblCedula.Location = new System.Drawing.Point(36, 336);
+            this.lblCedula.Location = new System.Drawing.Point(33, 27);
             this.lblCedula.Name = "lblCedula";
             this.lblCedula.Size = new System.Drawing.Size(40, 13);
             this.lblCedula.TabIndex = 5;
@@ -92,7 +92,7 @@
             // 
             // txtJson
             // 
-            this.txtJson.Location = new System.Drawing.Point(36, 129);
+            this.txtJson.Location = new System.Drawing.Point(449, 100);
             this.txtJson.Multiline = true;
             this.txtJson.Name = "txtJson";
             this.txtJson.Size = new System.Drawing.Size(356, 171);
@@ -100,7 +100,7 @@
             // 
             // btnTranformJson
             // 
-            this.btnTranformJson.Location = new System.Drawing.Point(707, 352);
+            this.btnTranformJson.Location = new System.Drawing.Point(459, 50);
             this.btnTranformJson.Name = "btnTranformJson";
             this.btnTranformJson.Size = new System.Drawing.Size(134, 23);
             this.btnTranformJson.TabIndex = 7;
