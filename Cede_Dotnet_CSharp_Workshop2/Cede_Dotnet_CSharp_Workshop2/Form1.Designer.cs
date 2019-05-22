@@ -67,7 +67,7 @@
             // grdPersons
             // 
             this.grdPersons.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grdPersons.Location = new System.Drawing.Point(36, 95);
+            this.grdPersons.Location = new System.Drawing.Point(459, 129);
             this.grdPersons.Name = "grdPersons";
             this.grdPersons.Size = new System.Drawing.Size(373, 171);
             this.grdPersons.TabIndex = 3;
@@ -92,7 +92,7 @@
             // 
             // txtJson
             // 
-            this.txtJson.Location = new System.Drawing.Point(485, 95);
+            this.txtJson.Location = new System.Drawing.Point(36, 129);
             this.txtJson.Multiline = true;
             this.txtJson.Name = "txtJson";
             this.txtJson.Size = new System.Drawing.Size(356, 171);
