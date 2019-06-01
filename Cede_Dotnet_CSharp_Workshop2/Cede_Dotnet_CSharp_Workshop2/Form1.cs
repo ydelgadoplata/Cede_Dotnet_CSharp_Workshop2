@@ -17,6 +17,8 @@ namespace Cede_Dotnet_CSharp_Workshop2
     {
         public IPersonas personas { get; set; }
 
+        List<ListaPersonas> personsDB { get; set; } = new List<ListaPersonas>();
+
         public Form1()
         {
             InitializeComponent();
@@ -28,9 +30,7 @@ namespace Cede_Dotnet_CSharp_Workshop2
             
             try
             {
-                ListaPersonas listapersonas = new ListaPersonas();
-
-                var personsDB = new List<ListaPersonas>();
+                ListaPersonas listapersonas = new ListaPersonas();               
 
                 //validación cédula
                 ValidarCedula(txtCedula.Text);
@@ -47,10 +47,10 @@ namespace Cede_Dotnet_CSharp_Workshop2
 
                 errorProvider1.SetError(txtCedula, "");
                 errorProvider1.SetError(txtNombre, "");
-
-                MessageBox.Show("Registro guardado!");
+                               
                 txtCedula.Text = txtNombre.Text = "";
                 grdPersons.DataSource = personsDB.ToList();
+                MessageBox.Show("Registro guardado!");
             }
             catch (Exception ex)
             {
