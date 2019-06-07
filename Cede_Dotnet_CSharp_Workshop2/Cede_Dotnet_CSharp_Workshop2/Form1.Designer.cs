@@ -39,13 +39,15 @@
             this.btnTranformJson = new System.Windows.Forms.Button();
             this.lblMessage = new System.Windows.Forms.Label();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.btnEdit = new System.Windows.Forms.Button();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.grdPersons)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(331, 73);
+            this.btnSave.Location = new System.Drawing.Point(247, 74);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(75, 23);
             this.btnSave.TabIndex = 0;
@@ -74,6 +76,7 @@
             this.grdPersons.Name = "grdPersons";
             this.grdPersons.Size = new System.Drawing.Size(373, 171);
             this.grdPersons.TabIndex = 3;
+            this.grdPersons.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdPersons_CellClick);
             // 
             // lblname
             // 
@@ -109,6 +112,7 @@
             this.btnTranformJson.TabIndex = 7;
             this.btnTranformJson.Text = "Transformar a Json";
             this.btnTranformJson.UseVisualStyleBackColor = true;
+            this.btnTranformJson.Click += new System.EventHandler(this.btnTranformJson_Click);
             // 
             // lblMessage
             // 
@@ -122,11 +126,33 @@
             // 
             this.errorProvider1.ContainerControl = this;
             // 
+            // btnEdit
+            // 
+            this.btnEdit.Enabled = false;
+            this.btnEdit.Location = new System.Drawing.Point(331, 73);
+            this.btnEdit.Name = "btnEdit";
+            this.btnEdit.Size = new System.Drawing.Size(75, 23);
+            this.btnEdit.TabIndex = 0;
+            this.btnEdit.Text = "Editar";
+            this.btnEdit.UseVisualStyleBackColor = true;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(331, 102);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(97, 17);
+            this.checkBox1.TabIndex = 9;
+            this.checkBox1.Text = "Borrar registro?";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(873, 403);
+            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.lblMessage);
             this.Controls.Add(this.btnTranformJson);
             this.Controls.Add(this.txtJson);
@@ -135,6 +161,7 @@
             this.Controls.Add(this.grdPersons);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.txtCedula);
+            this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.btnSave);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -157,6 +184,8 @@
         private System.Windows.Forms.Button btnTranformJson;
         private System.Windows.Forms.Label lblMessage;
         private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.Button btnEdit;
+        private System.Windows.Forms.CheckBox checkBox1;
     }
 }
 
