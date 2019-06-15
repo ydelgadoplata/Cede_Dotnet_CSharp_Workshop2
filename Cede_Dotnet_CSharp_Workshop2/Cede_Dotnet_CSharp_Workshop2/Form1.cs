@@ -118,11 +118,13 @@ namespace Cede_Dotnet_CSharp_Workshop2
                 if (dialogResult == DialogResult.Yes ||
                     dialogResult.ToString().Equals("Yes"))
                 {
-                    grdPersons.Rows.RemoveAt(selectedRowIndex);
+                    personsDB.RemoveAt(selectedRowIndex);
                     grdPersons.DataSource = personsDB.ToList();
                     MessageBox.Show("Registro Eliminado");
-                    btnEdit.Enabled = false;
-                    checkBox1.Enabled = false;
+                    btnEdit.Enabled = true;
+                    checkBox1.Enabled = true;
+                    checkBox1.Checked = false;
+                    btnSave.Enabled = true;
                     txtCedula.Text = txtNombre.Text = "";
                 }
             }
@@ -171,7 +173,7 @@ namespace Cede_Dotnet_CSharp_Workshop2
         {
             string output = JsonConvert.SerializeObject(grdPersons.DataSource);
             txtJson.Text = output;
-            System.IO.File.WriteAllText(@"D:\JsonTest.json", output);
+            //System.IO.File.WriteAllText(@"D:\JsonTest.json", output);
         }
     }
 
